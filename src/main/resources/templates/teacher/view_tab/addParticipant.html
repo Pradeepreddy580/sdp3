@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="teacher/view_tab/base::layout(~{::section})">
+<head>
+	
+</head>
+<body>
+
+<section>
+	<h2>Add Participant</h2>
+		<hr>
+		<div class="course-section">
+		
+			<form class="needs-validation" action='participantSave' method="post">
+				  <div class="form-row">
+				    <div class="col-md-4 mb-3">
+				      <label for="validationCustom01">Full Name</label>
+				      <input type="text" class="form-control " id="validationCustom01" placeholder="Full Name" name="fullname" required>
+				       
+				    </div>
+				  </div>
+				   <div class="form-row">
+				    <div class="col-md-3 mb-3">
+				      <label for="validationCustom03">Email</label>
+				      <input type="text" class="form-control" id="validationCustom03" placeholder="Email" name="email" required>
+				      
+				    </div>
+				    
+				    <div class="col-md-3 mb-3">
+				      <label for="validationCustom05">Password</label>
+				      <input type="text" class="form-control" id="validationCustom05" name="password" required>
+				    </div>
+				  </div>
+				  
+				  </div>
+				  <div class="form-row">
+				  <div class="col-md-3 mb-3">
+				  		<label>Role</label>
+				    	<div class="form-check">
+						  <input class="form-check-input" type="radio" name="teacher" id="exampleRadios1" value="true">
+						  <label class="form-check-label" for="exampleRadios1">
+						    Teacher
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="student" id="exampleRadios2" value="false" checked>
+						  <label class="form-check-label" for="exampleRadios2">
+						    Student
+						  </label>
+						</div>
+				  </div>
+				  </div>
+				  <button class="btn btn-primary" type="submit">Add Participant</button>
+			</form>
+			
+		</div>
+</section>
+
+
+</body>
+</html>

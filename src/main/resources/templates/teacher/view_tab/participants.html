@@ -7,6 +7,10 @@
 
 <section>
 	<div>
+		<h1>Participants</h1>
+		<div class="col-md-12 text-right">
+			<a th:href="@{/teacher/view/course/{id}/tab/participants/addParticipant}" class="btn btn-primary">Add Participant</a>
+		</div>
 		<h1 th:text="'Participants '+${course.numberOfParticipants}"></h1>
 		<table class="table table-striped">
 		  <thead>
